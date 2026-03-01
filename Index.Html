@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwagga 4x4 Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">KWAGGA 4x4</div>
+
+  <div class="filters">
+    <select id="vehicleFilter" onchange="filterProducts()">
+      <option value="All">All Vehicles</option>
+      <option value="Hilux">Hilux</option>
+      <option value="Ranger">Ranger</option>
+      <option value="Universal">Universal</option>
+    </select>
+
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="All">All Categories</option>
+      <option value="Protection">Protection</option>
+      <option value="Roof">Roof</option>
+      <option value="Recovery">Recovery</option>
+    </select>
+  </div>
+
+  <div class="cartIcon" onclick="toggleCart()">
+    🛒 <span id="cartCount">0</span>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Built For Real South African Terrain</h1>
+  <p>Premium 4x4 Accessories</p>
+</section>
+
+<section class="products">
+  <div id="productGrid" class="grid"></div>
+</section>
+
+<div id="cartDrawer" class="cartDrawer">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <button onclick="checkout()">Checkout via WhatsApp</button>
+</div>
+
+<a href="https://wa.me/27XXXXXXXXX" class="whatsapp">💬</a>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
